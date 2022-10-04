@@ -1,0 +1,250 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    list-style: none;
+}
+
+/*Header*/
+@media screen and (min-width:500px) {
+.header-total{
+    width: 100%;
+    display: flex;
+    background: linear-gradient(#51aa59,rgb(227, 188, 139));
+    justify-content: space-between;
+    position: sty
+    top:0%;
+    align-items:baseline;
+    grid-area:header;
+}
+nav{
+    width: 75%;
+}
+
+ul{
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+} }
+
+.color-one{
+    color:#7FB77E
+}
+.color-2{
+    color:#51aa59;
+}
+.color-3{
+    color:#F7F6DC;
+}
+.color-4{
+    color:#FFC090;
+}
+.color-5{
+    color:rgb(227, 188, 139);
+}
+.color-6{
+    color:rgb(125, 73, 4);
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-style: oblique;
+    
+}
+
+h2{
+    background-color:#F7F6DC;
+    text-align: center;
+}
+h3{
+background-color: #7FB77E;
+}
+.contenedor-1{
+    margin-top: 40px;
+}
+.articulo-1{
+
+    background-color: #f6e3d4;
+    margin-top: 50px;
+    display: grid;
+    width:fit-content;
+    border-color: #51aa59;
+    border-style: solid;
+    grid-area:articulo1;
+    justify-content: center;
+    align-items:baseline;
+
+}
+.articulo-2{
+
+    background-color: #f6e3d4;
+    margin-top: 50px;
+    display: grid;
+    width:fit-content;
+    border-color: #51aa59;
+    border-style: solid;
+    grid-area:articulo2;
+    justify-content: center;
+    align-items:baseline;
+
+}
+.caja-4{
+    display:grid;
+    background-color: #7FB77E;
+    border-color: black;
+    border-radius: 20px;
+    margin-top: 20px;
+    grid-area: encabezado1;
+}
+.caja-2{
+    display:grid;
+    background-color: #7FB77E;
+    border-color: black;
+    border-radius: 20px;
+    margin-top: 20px;
+    grid-area:encabezado2;
+}
+.caja-3{
+    
+    background-color: #7FB77E;
+    border-color: black;
+    border-radius: 10 px;
+    
+
+}
+.caja-titulo{
+    width: 100%;
+    border-bottom: #51aa59;
+    border-top: #F7F6DC;
+    text-align: center;
+}
+
+@media screen and (min-width:500px)  {
+.contenedor.main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:10% 45% 45%;
+    grid-template-areas: 
+    "encabezado1 encabezado1"
+    "encabezado2 encabezado2"
+    "articulo1 articulo2"
+    ;
+
+    grid-area:main;
+}
+}
+
+.contenedor-grilla{
+    display: grids;
+    grid-template-columns:2fr 2fr;
+    grid-template-rows: 15% auto 15%;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+}
+
+
+
+body{
+    background-size: cover;
+    background-image:url(./Imagenes/papas-cultivan-campo-agricola-agricultura-como-tipo-actividad-negocio-seleccion-variedades-papa-alta-calidad-obtener-mayor-rendimiento-posible-alimentos-cerca_252085-801\ \(1\).jpg);
+}
+
+
+
+@media screen and (min-width:500px) {
+footer{
+    display: grid;
+    background-color: #602e09;
+    width: 100%;
+    height: 20%;
+    border-color: #d6762c;
+    position: absolute;
+    bottom: 0;
+    grid-area: footer;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: 
+    "contacto redes"
+    "wp facebook"
+    "email instagram";
+}
+}
+
+.footer-1{
+    display: grid;
+    grid-area: contacto;
+    justify-content: space-between;
+    font-style: oblique;
+    color: white;
+    align-items: baseline;
+    
+}
+.footer-2{
+    display: grid;
+    grid-area: redes;
+    justify-content: space-between;
+    font-style: oblique;
+    color: white;
+    align-items: baseline;
+}
+.footer-3{
+    display: grid;
+    grid-area: wp;
+    justify-content: space-between;
+    font-style: oblique;
+    color: white;
+    align-items: baseline;
+}
+.footer-4{
+    display: grid;
+    grid-area: facebook;
+    justify-content: space-between;
+    font-style: oblique;
+    color: white;
+    align-items: baseline;
+}
+.footer-5{
+    display: grid;
+    grid-area: email;
+    justify-content: space-between;
+    font-style: oblique;
+    color: white;
+    align-items: baseline;
+}
+.footer-6{
+    display: grid;
+    grid-area: instagram;
+    justify-content: space-between;
+    font-style: oblique;
+    color: white;
+    align-items: baseline;
+}
+
+.contenedor-compras{
+display:flex;
+justify-content: space-between;
+padding:10px;
+margin-top: 30px;
+background:linear-gradient(#F7F6DC,#FFC090,rgb(202, 122, 18))
+
+}
+.contenedor-caja-form{
+    display:inline-block;
+    margin-block: 10px;
+    padding: 5px;
+    background-color: aliceblue;
+    justify-items: baseline;
+    border-radius:50px ;
+    border-color: black;
+    
+
+}
+.contenedor-main-compras{
+    margin-top: 10px;
+}
+
