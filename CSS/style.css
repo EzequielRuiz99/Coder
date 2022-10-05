@@ -5,26 +5,28 @@
 }
 
 /*Header*/
-@media screen and (min-width:500px) {
+
 .header-total{
     width: 100%;
     display: flex;
-    background: linear-gradient(#51aa59,rgb(227, 188, 139));
+    background: linear-gradient(#d67323c7,rgba(167, 130, 54, 0.64));
     justify-content: space-between;
-    position: sty
+    position:sticky
     top:0%;
     align-items:baseline;
     grid-area:header;
 }
 nav{
     width: 75%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul{
     width: 75%;
     display: flex;
     justify-content: space-around;
-} }
+} 
+
 
 .color-one{
     color:#7FB77E
@@ -50,8 +52,11 @@ p{
 
 h1{
     font-style: oblique;
+    justify-content: center;
     
 }
+
+/*Main*/
 
 h2{
     background-color:#F7F6DC;
@@ -120,11 +125,12 @@ background-color: #7FB77E;
     text-align: center;
 }
 
-@media screen and (min-width:500px)  {
+
 .contenedor.main{
-    height: 100%;
+    height: 75%;
     width: 100%;
     display: grid;
+    padding: 20px;
     grid-template-columns:50% 50%;
     grid-template-rows:10% 45% 45%;
     grid-template-areas: 
@@ -135,7 +141,8 @@ background-color: #7FB77E;
 
     grid-area:main;
 }
-}
+
+
 
 .contenedor-grilla{
     display: grids;
@@ -145,92 +152,39 @@ background-color: #7FB77E;
     "header header"
     "main main"
     "footer footer";
-}
-
-
-
-body{
     background-size: cover;
-    background-image:url(./Imagenes/papas-cultivan-campo-agricola-agricultura-como-tipo-actividad-negocio-seleccion-variedades-papa-alta-calidad-obtener-mayor-rendimiento-posible-alimentos-cerca_252085-801\ \(1\).jpg);
+    background-image:url(../Imagenes/papas-cultivan-campo-agricola-agricultura-como-tipo-actividad-negocio-seleccion-variedades-papa-alta-calidad-obtener-mayor-rendimiento-posible-alimentos-cerca_252085-801\ \(1\).jpg)
 }
 
+/*Footer*/
 
-
-@media screen and (min-width:500px) {
-footer{
-    display: grid;
-    background-color: #602e09;
+.footercierre{
     width: 100%;
-    height: 20%;
-    border-color: #d6762c;
+    height: auto;
+    padding: 20 px;
+    background: linear-gradient(#d67323c7,rgba(167, 130, 54, 0.64)); 
+    justify-content: space-between;
+    align-items: stretch;
     position: absolute;
     bottom: 0;
-    grid-area: footer;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 33% 33% 33%;
-    grid-template-areas: 
-    "contacto redes"
-    "wp facebook"
-    "email instagram";
-}
+
 }
 
-.footer-1{
-    display: grid;
-    grid-area: contacto;
+.footercierre_contenido{
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    font-style: oblique;
-    color: white;
-    align-items: baseline;
-    
-}
-.footer-2{
-    display: grid;
-    grid-area: redes;
-    justify-content: space-between;
-    font-style: oblique;
-    color: white;
-    align-items: baseline;
-}
-.footer-3{
-    display: grid;
-    grid-area: wp;
-    justify-content: space-between;
-    font-style: oblique;
-    color: white;
-    align-items: baseline;
-}
-.footer-4{
-    display: grid;
-    grid-area: facebook;
-    justify-content: space-between;
-    font-style: oblique;
-    color: white;
-    align-items: baseline;
-}
-.footer-5{
-    display: grid;
-    grid-area: email;
-    justify-content: space-between;
-    font-style: oblique;
-    color: white;
-    align-items: baseline;
-}
-.footer-6{
-    display: grid;
-    grid-area: instagram;
-    justify-content: space-between;
-    font-style: oblique;
-    color: white;
-    align-items: baseline;
+    align-items:stretch;
+    background: linear-gradient(#d67323c7,rgba(167, 130, 54, 0.64)); 
+
 }
 
 .contenedor-compras{
-display:flex;
 justify-content: space-between;
 padding:10px;
 margin-top: 30px;
-background:linear-gradient(#F7F6DC,#FFC090,rgb(202, 122, 18))
+background:linear-gradient(#F7F6DC,#FFC090,rgb(202, 122, 18));
+bottom: 0;
 
 }
 .contenedor-caja-form{
@@ -241,10 +195,98 @@ background:linear-gradient(#F7F6DC,#FFC090,rgb(202, 122, 18))
     justify-items: baseline;
     border-radius:50px ;
     border-color: black;
-    
 
 }
 .contenedor-main-compras{
     margin-top: 10px;
 }
 
+
+/*Compras*/
+
+
+.div_compras{
+    margin-top:5px;
+    background-color: #f7f6dcc3 ;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    
+}
+
+@media screen and (min-width:500px) {
+    .header-total ;
+    footer ; 
+    .contenedor.main ;
+}
+@media screen and (min-width: 992px) {
+    .footercierre__contenido{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+.container{
+font-size: 25px;
+text-shadow: 10px 10px 5px rgb(51, 48, 48);
+justify-content: center;
+text-align: center;
+background:linear-gradient(#f6f3aae9,#e69f6ad8,rgb(202, 122, 18));
+padding: 30px;
+border-radius: 10px;
+
+}
+.container2{
+margin-top: 20px;
+font-size: 25px;
+text-shadow: 10px 10px 5px rgb(51, 48, 48);
+justify-content: center;
+text-align: center;
+background:linear-gradient(#f6f3aae9,#e69f6ad8,rgb(202, 122, 18));
+padding: 30px;
+border-radius: 10px;
+
+
+}
+
+
+/* Mapa */
+.clase_mapa{
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+
+/*Portada nosotros */
+.imagen_nosotros {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 350px;
+    width: 100%;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.contorno{
+    background-color: #f6e3d4;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.contorno1{
+    background-color: #c39978;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    box-shadow: 0px 0px 5px 1px black;
+}

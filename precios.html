@@ -6,65 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="CSS/css/bootstrap.min.css">
+    <script src="js/js/bootstrap.min.js"></script>
 </head>
-<body>
-    <header>
-        <h1><a href="../index.html">Granja finux</a></h1>
-            <nav>
-                <ul>
-                    <li><strong>Productos</strong></li>
-                    <!--<ul>
-                    <li><strong> Milanesas de pollo</strong></li>
-                    <li><strong>Pata y muslo</strong></li>
-                    <li><strong>Suprema</strong></li>
-                    <li><strong>Alitas con patitas</strong></li>
-                    <li><strong>Medallones de pollo</strong></li>-->
-                
-                    <!-- <ul>
-                        <li>Rellenos de espinaca</li>
-                        <li>Rellenos de jamon y queso</li>
-                        <li>Rellenos de queso</li>
-                        <li>Rellenos de tomate desidratado</li>
-                    </ul>
-                    </ul>-->
-    <li> <strong><a href="../Pages/precios.html">Precios</a></strong></li>
-    <li><strong><a href="../Pages/nosotros.html">Nosotros</a></strong></li>
-    <li><strong> Servicio</strong></li>
-    <li><strong><a href="../Pages/contacto.html">Contacto</a></strong></li>
-    <li><strong><a href="../Pages/compras.html">Compras</a></li>
-    </ul>
-</nav>
+<body class="contenedor-grilla">
+    <header class="header-total">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand nav__logo" href="index.html" style="color:#3b2b02 ;"> <img src="Imagenes/1801590.png" alt="granjafinux"><span>Granja Finux</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./nosotros.html" style="color:#3b2b02 ;">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html"style="color:#3b2b02 ;">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./compras.html"style="color:#3b2b02 ;">Compras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./precios.html"style="color:#3b2b02 ;">Precios</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 </header>
 <main>
-    <section>
+   <!--  <section>
         <h4>Lista de precios</h4>
 <article>
     <table border="1">
-        <!-- Fila 1 -->
+      
         <tr>
             <th class="color-6">Producto</th>
             <th class="color-6">Por kilo</th>
             <th class="color-6">Por dos kilos</th>
         </tr>
-        <!-- Fila 2 -->
+
         <tr>
             <th class="color-4">Milanesas de pollo</th>
             <th>$700</th>
             <th>$1300</th>
         </tr>
-        <!-- Fila 3 -->
+     
         <tr>
             <th class="color-4">Pata y muslo</th>
             <th>$430</th>
             <th>$800</th>
         </tr>
-        <!-- Fila 4 -->
+    
         <tr>
             <th class="color-4">Suprema </th>
             <th>$650</th>
             <th>$1200</th>
-        </tr>
-        <!-- Fila 5 -->
+    
         <tr>
             <th class="color-4">Alitas con patitas</th>
             <th>$400</th>
@@ -75,14 +77,14 @@
 <hr>
 <article>
     <table border="1">
-        <!-- Fila 1 -->
+   
     <tr>
         <th class="color-6">Medallones de pollo</th>
         <th class="color-6">Con espinaca</th>
         <th class="color-6">Con jamon y queso</th>
         <th class="color-6">Con queso</th>
     </tr>
-        <!-- Fila 2 -->
+    
     <tr>
         <th>X kilo $500</th>
         <th>X kilo $550</th>
@@ -91,12 +93,77 @@
     </tr>
     </table>
 </article>
-    </section>
+    </section>-->
+    <h1 class="contorno">Lista de precios</h1>
+    <div class="container"> 
+        <div class="row">
+        <div class="col-md-4"> 
+        Productos
+        <div>Milanesa</div>
+        <div>Pata y mustlo</div>
+        <div>Suprema</div>
+        <div>Alitas con patitas</div>
+    </div>
+        <div class="col-md-4">
+        Por kilo
+        <div>$700</div>
+        <div>$430</div>
+        <div>$650</div>
+        <div>$400</div>
+    </div>
+        <div class="col-md-4">
+        Oferta por dos kilos
+        <div>$1300</div>
+        <div>$800</div>
+        <div>$1200</div>
+        <div>$750</div>
+        
+    </div>
+</div>
+</div>
+<div class="container2"> 
+    <div class="row">
+        <div class="col-md-6"> 
+            Medallones de pollo
+            <div>Con espinaca</div>
+            <div>Con Jamon y queso</div>
+            <div>Con queso</div>
+    </div>
+    <div class="col-md-4">
+        Por kilo
+        <div>$550</div>
+        <div>$620</div>
+        <div>$580</div>
+    </div>
+</div>
+</div>
 </main>
-<footer>
-    <div class="color-5"><strong>Contactos </strong></div>
-    <div class="color-5"><strong> Nuestras redes </strong></div>
-    <div class="color-5"><strong> Ubicación </strong></div>
+<footer class="footercierre">
+
+    <div class="footercierre_contenido">
+
+        <div class="_contactos">
+
+            <h3 class="footercierre_contenido">Contactos</h3>
+            <ul>
+                <li >WhatsApp: +54 1185473897</li>
+                <li >E-Mail: granjafinux@gmail.com </li>
+            </ul> 
+
+        </div>
+
+        <div>
+            
+            <h3 class="footercierre_contenido">Nuestras redes</h3>
+            <ul>
+                <li>Facebook: Granja Finux</li>
+                <li>Instagram: @granja.finux</li>
+            </ul>
+        </div>
+
+    </div>
+
 </footer>
+
 </body>
 </html>
